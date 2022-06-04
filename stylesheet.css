@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #FCC978;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+    float: right;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(foto/bg.jpeg);
+    background-size: cover;
+    color: rgb(37, 23, 2);
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    margin-top: 50px;
+}
+
+.wrapper_cont {
+    margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.profile img {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: solid 3px white;
+}
+
+.top-wrapper h1 {
+    font-size: 45px;
+}
+
+.top-wrapper h1,
+h2 {
+    color: rgb(37, 23, 2);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* ABOUT */
+
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "skills about_description";
+    background-color: #FFE9C7;
+}
+
+.about_profil {
+    background-color: #FFE9C7;
+    grid-area: skills;
+}
+
+.about_photo {
+    display: flex;
+    justify-content: center;
+}
+
+.about_photo img {
+    margin-top: 1rem;
+    height: 280px;
+    width: 250px;
+    border: solid .5rem white;
+}
+
+.identitas {
+    padding: 15px;
+    color: black
+}
+
+.identitas span {
+    font-weight: 100;
+}
+
+.identitas,
+.skills_content {
+    margin: 5px 20px 5px 20px;
+}
+
+.skills_data {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills_name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.skills_bar {
+    position: absolute;
+    bottom: -1rem;
+    height: .8rem;
+    background-color: #F69700;
+}
+
+.skills_html {
+    width: 80%;
+}
+
+.skills_css {
+    width: 85%;
+}
+
+.skills_php {
+    width: 75%;
+}
+
+.skills_python {
+    width: 85%;
+}
+
+.skills_js {
+    width: 55%;
+}
+
+.skills_prepro {
+    width: 70%;
+}
+
+.mg-section {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.about_description {
+    background-color: #FFE9C7;
+    grid-area: about_description;
+    margin-left: 10px;
+}
+
+.about-me {
+    margin: 10px 50px;
+}
+
+.achievements {
+    margin-top: 80px;
+}
+
+.about-me p,
+.achievements p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about-me h1,
+.achievements h1 {
+    margin-bottom: 20px;
+}
+
+.list-achievements {
+    margin-left: 70px;
+}
+
+
+/* EXPERIENCE */
+
+.experience_container {
+    height: 410px;
+    background-color: #FFE9C7;
+}
+
+.experience_container h1 {
+    padding-top: 100px;
+}
+
+.section_title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.experienceslist {
+    display: flex;
+    justify-content: space-around
+}
+
+.experience {
+    margin: 20px 10px;
+    width: 375px;
+    height: 200px;
+    background-color: #ebd2a8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.experience:hover {
+    transform: scale(1.05);
+}
+
+.experience h3 {
+    font-size: large;
+    padding: 3px;
+    text-decoration: underline;
+    color: black
+}
+
+.experience h4 {
+    padding: 3px;
+}
+
+.experience p {
+    padding: 10px 0 0 3px
+}
+
+.experience span {
+    font-size: small;
+}
+
+
+/* PORTOFOLIO */
+
+.portfolio_container {
+    height: 300px;
+}
+
+
+/* FOOTER */
+
+.footer_container {
+    height: 200px;
+    background-color: #b36f03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
