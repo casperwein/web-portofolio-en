@@ -40,7 +40,7 @@ nav ul li:hover {
 
 .top-wrapper {
     padding: 180px 0 100px 0;
-    background-image: url(foto/bg.jpeg);
+    background-image: url(foto/bg.jpg);
     background-size: cover;
     color: rgb(37, 23, 2);
     display: flex;
@@ -55,7 +55,7 @@ nav ul li:hover {
 
 .container {
     width: 100%;
-    background-color: #FFE9C7;
+    /* background-color: #FFE9C7; */
 }
 
 .profile {
@@ -285,6 +285,10 @@ h2 {
 
 
 /* CONTACT */
+
+.contact_container {
+    background-color: #FFE9C7;
+}
 
 .contact_content {
     margin: 40px;
