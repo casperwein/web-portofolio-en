@@ -5,6 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: #FFE9C7;
+}
+
 header {
     height: 60px;
     width: 100%;
@@ -28,6 +32,17 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
+}
+
+.download {
+    margin-right: 600px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.download:hover {
+    background-color: #b36f03;
 }
 
 nav ul li a:hover {
@@ -55,7 +70,6 @@ nav ul li:hover {
 
 .container {
     width: 100%;
-    /* background-color: #FFE9C7; */
 }
 
 .profile {
@@ -83,6 +97,29 @@ h2 {
     text-align: center;
 }
 
+.home_social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_social-link {
+    display: inline-flex;
+    background-color: #b36f03;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: .40rem;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+.home_social-link:hover {
+    background-color: #f8aa2d;
+}
+
 
 /* ABOUT */
 
@@ -95,6 +132,7 @@ h2 {
 
 .about_profil {
     background-color: #FFE9C7;
+    /* background-color: red; */
     grid-area: skills;
 }
 
@@ -203,6 +241,82 @@ h2 {
 }
 
 
+/* PORTOFOLIO */
+
+.portfolio_container {
+    height: 300px;
+    background-color: #FFE9C7;
+}
+
+.section_title,
+.porto-picture {
+    margin-top: 20px;
+}
+
+.section_title h1 {
+    padding-top: 100px;
+}
+
+.picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    background-color: #FFE9C7;
+}
+
+.picture2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "kiri kanan";
+    background-color: #FFE9C7;
+}
+
+.image {
+    grid-area: left;
+}
+
+.title {
+    grid-area: right;
+}
+
+.image2 {
+    grid-area: kanan;
+}
+
+.title2 {
+    grid-area: kiri;
+}
+
+.image img {
+    margin: 20px 0 0 20px;
+}
+
+.image1 img {
+    margin: 20px 0 0 20px;
+}
+
+.box {
+    display: flex;
+    background-color: #FFE9C7;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: black;
+    font-size: 45px;
+}
+
+.image img {
+    border-radius: 5px;
+}
+
+.img_porto {
+    height: 400px;
+    width: 650px;
+}
+
+
 /* EXPERIENCE */
 
 .experience_container {
@@ -260,13 +374,6 @@ h2 {
 }
 
 
-/* PORTOFOLIO */
-
-.portfolio_container {
-    height: 300px;
-}
-
-
 /* FOOTER */
 
 .footer_container {
@@ -285,6 +392,10 @@ h2 {
 
 
 /* CONTACT */
+
+#contact {
+    margin-top: 1500px;
+}
 
 .contact_container {
     background-color: #FFE9C7;
