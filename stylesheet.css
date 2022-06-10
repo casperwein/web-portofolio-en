@@ -35,14 +35,28 @@ nav ul li a {
 }
 
 .download {
-    margin-right: 600px;
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    transition: .25s;
 }
 
 .download:hover {
     background-color: #b36f03;
+    color: white;
+    transform: scale(1.05);
+}
+
+.download_button {
+    text-decoration: none;
+    position: absolute;
+    margin: 10px;
+}
+
+nav ul li .download_button {
+    background-color: red;
 }
 
 nav ul li a:hover {
