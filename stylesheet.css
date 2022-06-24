@@ -166,10 +166,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.list-achievements {
-    margin-left: 70px;
-}
-
 
 /* PORTOFOLIO */
 
@@ -370,7 +366,10 @@ h2 {
         margin-top: -200px;
     }
     /* about */
-    .about_container {
+    .about .about_mob {
+        display: none;
+    }
+    .about_content {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "skills about_description";
@@ -387,6 +386,9 @@ h2 {
     }
     .container {
         width: 100%;
+    }
+    .list-achievements {
+        margin-left: 70px;
     }
     /* portofolio */
     .portfolio_container {
@@ -453,26 +455,54 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 767px) {
     .header {
         display: none;
     }
     .profile img {
         width: 300px;
         height: 300px;
-        /* margin-top: 40px; */
+        margin-top: -10px;
     }
     .wrapper_cont h1 {
         font-size: 35px;
+        padding-top: 20px;
     }
     .wrapper_cont h2 {
         font-size: 20px;
+        padding-bottom: 60px;
+    }
+    .home_social i {
+        font-size: 20px;
+    }
+    /* about */
+    .about .about_mob h1 {
+        margin-top: 30px;
+    }
+    .about_content {
+        margin-top: -60px;
+    }
+    .about-me,
+    .achievements {
+        margin: 15px;
+    }
+    .list-achievements {
+        margin-left: 15px;
     }
     .about-me p,
     .achievements .list-achievements p {
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .about_description .about-me h1 {
+        display: none;
+    }
+    .achievements h1 {
+        font-size: 20px;
     }
     /* EXPERIENCE */
+    #experience {
+        margin-top: -80px;
+    }
     .exp {
         display: flex;
         justify-content: center;
@@ -487,7 +517,7 @@ h2 {
     .dua {
         margin-top: -10px;
     }
-    /* EXPERIENCE */
+    /* contact */
     .contact_form-input {
         width: 80%;
     }
