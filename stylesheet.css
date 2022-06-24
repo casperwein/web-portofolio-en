@@ -10,14 +10,12 @@ body {
 }
 
 .top-wrapper {
-    padding: 180px 0 100px 0;
     background-image: url(foto/bg.jpg);
     background-size: cover;
     color: rgb(37, 23, 2);
     display: flex;
     justify-content: center;
     position: inherit;
-    margin-top: 50px;
 }
 
 .wrapper_cont {
@@ -27,7 +25,6 @@ body {
 .profile {
     display: flex;
     justify-content: center;
-    margin-top: -200px;
 }
 
 .profile img {
@@ -368,6 +365,14 @@ h2 {
     nav ul li:hover {
         transform: scale(1.1);
     }
+    /* wrapper */
+    .top-wrapper {
+        padding: 180px 0 100px 0;
+        margin-top: 50px;
+    }
+    .profile {
+        margin-top: -200px;
+    }
     /* about */
     .about_container {
         display: grid;
@@ -377,7 +382,6 @@ h2 {
     }
     .about_profil {
         background-color: #FFE9C7;
-        /* background-color: red; */
         grid-area: skills;
     }
     .about_description {
@@ -449,17 +453,27 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-        margin-left: 20px;
-        width: auto
+@media only screen and (max-width: 799px) {
+    .header {
+        display: none;
+    }
+    .profile img {
+        width: 300px;
+        height: 300px;
+        /* margin-top: 40px; */
+    }
+    .wrapper_cont h1 {
+        font-size: 35px;
+    }
+    .wrapper_cont h2 {
+        font-size: 20px;
     }
     .about-me p,
     .achievements .list-achievements p {
         font-size: 15px;
     }
-    .about .about_container {
-        margin-left: 20px;
+    .about_container {
+        background-color: red;
     }
     /* EXPERIENCE */
     .exp {
