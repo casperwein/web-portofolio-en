@@ -13,6 +13,80 @@ body {
     background-color: #FFE9C7;
 }
 
+header {
+    background-color: #FCC978;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download {
+    padding: 12px 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px white solid;
+    color: white;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.down a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: .3s;
+}
+
+.down:hover {
+    transform: scale(1.04);
+}
+
+.download:hover {
+    background-color: #b36f03;
+    color: white;
+    transform: scale(1.05);
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ol {
+    display: flex;
+}
+
+.nav-bar ol li a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .3s;
+    margin: 0 5px;
+    color: black;
+}
+
+.nav-bar ol li {
+    list-style-type: none;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+}
+
+nav ol li a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+}
+
 .top-wrapper {
     background-image: url(foto/bg.jpg);
     background-size: cover;
@@ -170,12 +244,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-
-/* PORTOFOLIO */
-
-
-/* EXPERIENCE */
-
 .experience_container {
     height: 410px;
     background-color: #FFE9C7;
@@ -313,53 +381,10 @@ h2 {
 @media only screen and (min-width: 768px) {
     /* navbar */
     header {
-        height: 60px;
-        width: 100%;
-        background-color: #FCC978;
         position: fixed;
-        top: 0;
         overflow: hidden;
         z-index: 100;
-    }
-    nav ul li {
-        list-style-type: none;
-        padding: 10px 25px;
-        float: right;
-        margin-top: 10px;
-        font-weight: bold;
-        transition: .3s;
-        cursor: pointer;
-    }
-    nav ul li a {
-        color: black;
-        text-decoration: none;
-    }
-    .download {
-        padding: 10px;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 5px;
-        color: black;
-        font-weight: bolder;
-        transition: .25s;
-    }
-    .download:hover {
-        background-color: #b36f03;
-        color: white;
-        transform: scale(1.05);
-    }
-    .download_button {
-        text-decoration: none;
-        position: absolute;
-        margin: 10px;
-    }
-    nav ul li .download_button {
-        background-color: red;
-    }
-    nav ul li a:hover {
-        color: rgb(255, 255, 255);
-    }
-    nav ul li:hover {
-        transform: scale(1.1);
+        top: 0;
     }
     /* wrapper */
     .top-wrapper {
@@ -463,9 +488,51 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) {
-    .header {
-        display: none;
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-right: 20px;
+    }
+    .nav-bar {
+        margin-top: -20px;
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #FCC978;
+        transition: .3s;
+        overflow: hidden;
+    }
+    .nav-bar ol {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .3s;
+        opacity: 0;
+    }
+    .nav-bar ol li a {
+        margin-bottom: 12px;
+    }
+    .nav-bar.active {
+        height: 350px;
+    }
+    .nav-bar.active ol {
+        opacity: 1;
+    }
+    .download {
+        font-size: smaller;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* profile */
     .profile img {
         width: 300px;
         height: 300px;
