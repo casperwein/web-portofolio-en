@@ -12,8 +12,8 @@
 
 <body>
     <!--awal navbar-->
-    <header>
-        <div class="down">
+    <header id="nav">
+        <div class="down" id="down">
             <a class="download" href="/resume/CV Eggan Nachson.pdf" download>Download Resume</a>
         </div>
         <div class="hamburger">
@@ -42,7 +42,7 @@
                 <a href="https://www.linkedin.com/in/eggan-nachson-4039271a4/" target="_blank" class="home_social-link"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://www.instagram.com/eccoonn/" target="_blank" class="home_social-link"><i class='bx bxl-instagram' ></i></a>
             </div>
-            <h1>Eggan Nachson</h1>
+            <h1 id="portof_name"></h1>
             <h2>Front End Developer</h2>
         </div>
     </section>
@@ -213,7 +213,6 @@
                             <label for="" class="contact_form-tag">Name</label>
                             <input type="text" placeholder="Insert your name" class="contact_form-input" name="name">
                         </div>
-
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag">Email</label>
                             <input type="text" placeholder="Insert your email" name="email" class="contact_form-input">
@@ -227,14 +226,8 @@
                             <label for="" class="contact_form-tag">Message</label>
                             <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="contact_form-input"></textarea>
                         </div>
-                        <button class="button">Send Message</button>
+                        <button class="button" onclick="openPopup">Send Message</button>
                     </form>
-                    <div class="onsubmit" id="popup">
-                        <img src="./foto/submit.png" alt="">
-                        <h2>SUCCES</h2>
-                        <p>Terimakasih! Pesan Anda Terkirim</p>
-                        <button type="button">OK</button>
-                    </div>
                 </div>
             </div>
         </div>
