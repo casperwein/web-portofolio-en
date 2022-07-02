@@ -208,28 +208,33 @@
             </div>
             <div class="contact">
                 <div class="contact_content">
-                    <form action="" class="contact_form">
+                    <form action="" class="contact_form" name="message_form">
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag">Name</label>
-                            <input type="text" placeholder="Insert your name" class="contact_form-input">
+                            <input type="text" placeholder="Insert your name" class="contact_form-input" name="name">
                         </div>
 
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag">Email</label>
-                            <input type="text" placeholder="Insert your email" class="contact_form-input">
+                            <input type="text" placeholder="Insert your email" name="email" class="contact_form-input">
                         </div>
 
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag">Phone Number</label>
-                            <input type="text" placeholder="Insert your Phone Number" class="contact_form-input">
+                            <input type="text" placeholder="Insert your Phone Number" name="phone_number" class="contact_form-input">
                         </div>
-
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact_form-input"></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="contact_form-input"></textarea>
                         </div>
-                        <button onclick="sendMessage()" class=" button ">Send Message</button>
+                        <button class="button">Send Message</button>
                     </form>
+                    <div class="onsubmit" id="popup">
+                        <img src="./foto/submit.png" alt="">
+                        <h2>SUCCES</h2>
+                        <p>Terimakasih! Pesan Anda Terkirim</p>
+                        <button type="button">OK</button>
+                    </div>
                 </div>
             </div>
         </div>
